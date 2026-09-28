@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071b1b">
+  <meta name="description" content="Clarity care intelligence workspace overview.">
+  <title>Overview — Clarity workspace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <link href="dashboard.css" rel="stylesheet">
+</head>
+<body class="dashboard-body">
+  <div class="dashboard-shell">
+    <aside class="dashboard-sidebar" data-dashboard-sidebar>
+      <div class="sidebar-top">
+        <a class="brand" href="dashboard.html" aria-label="Clarity dashboard home">
+          <img class="brand-logo" src="images/image.png" alt="Clarity">
+        </a>
+        <button class="sidebar-close" type="button" data-sidebar-close aria-label="Close navigation"><i class="bi bi-x-lg" aria-hidden="true"></i></button>
+      </div>
+      <div class="dropdown-wrap" data-dropdown><button class="workspace-switcher" type="button" data-dropdown-trigger aria-expanded="false" aria-haspopup="true" aria-controls="workspace-menu"><span class="workspace-icon"><i class="bi bi-heart-pulse" aria-hidden="true"></i></span><span class="workspace-switcher-copy"><strong>Northstar Health</strong><span>Care operations</span></span><i class="bi bi-chevron-expand" aria-hidden="true"></i></button><div class="dropdown-menu workspace-menu" id="workspace-menu" data-dropdown-menu hidden><p class="dropdown-menu-label">Your workspaces</p><button class="dropdown-item is-active" type="button" data-demo-action data-success-message="Northstar Health is already your active workspace."><i class="bi bi-check2" aria-hidden="true"></i>Northstar Health</button><button class="dropdown-item" type="button" data-demo-action data-success-message="Switching to Lakeside Clinics."><i class="bi bi-buildings" aria-hidden="true"></i>Lakeside Clinics</button><button class="dropdown-item" type="button" data-demo-action data-success-message="Switching to Riverview Care."><i class="bi bi-buildings" aria-hidden="true"></i>Riverview Care</button><span class="dropdown-separator"></span><button class="dropdown-item" type="button" data-demo-action data-success-message="Workspace creation flow opened."><i class="bi bi-plus-lg" aria-hidden="true"></i>Add a workspace</button></div></div>
+      <nav class="dashboard-nav" aria-label="Dashboard navigation">
+        <span class="dashboard-nav-label">Workspace</span>
+        <a class="active" href="dashboard.html" aria-current="page"><i class="bi bi-grid-1x2" aria-hidden="true"></i>Overview</a>
+        <a href="patients.html"><i class="bi bi-people" aria-hidden="true"></i>Patients<span class="ms-auto dashboard-status neutral">1,248</span></a>
+        <a href="care-plans.html"><i class="bi bi-clipboard2-pulse" aria-hidden="true"></i>Care plans<span class="ms-auto dashboard-status neutral">1,248</span></a><a href="triage.html"><i class="bi bi-columns-gap" aria-hidden="true"></i>Triage<span class="ms-auto dashboard-status high">4</span></a>
+        <a href="signals.html"><i class="bi bi-activity" aria-hidden="true"></i>Signals<span class="ms-auto dashboard-status high">27</span></a>
+        <a href="analytics.html"><i class="bi bi-bar-chart" aria-hidden="true"></i>Analytics</a>
+        <span class="dashboard-nav-label mt-4">Manage</span>
+        <a href="team.html"><i class="bi bi-person-badge" aria-hidden="true"></i>Team</a>
+        <a href="settings.html"><i class="bi bi-sliders" aria-hidden="true"></i>Settings</a>
+      </nav>
+      <div class="sidebar-spacer"></div>
+      <a class="sidebar-help" href="book-a-demo.html"><i class="bi bi-question-circle" aria-hidden="true"></i>Need a hand?</a>
+      <div class="sidebar-user"><span class="avatar avatar-lime">JM</span><span class="sidebar-user-copy"><strong>Jordan Morgan</strong><span data-dashboard-label>Workspace admin</span></span><i class="bi bi-three-dots ms-auto" aria-hidden="true"></i><button class="sidebar-logout" type="button" data-logout aria-label="Log out of Clarity" title="Log out"><i class="bi bi-box-arrow-right" aria-hidden="true"></i></button></div>
+    </aside>
+    <div class="dashboard-overlay" data-sidebar-overlay></div>
+
+    <div class="dashboard-main">
+      <header class="dashboard-topbar">
+        <div class="topbar-left"><button class="dashboard-icon-button d-lg-none" type="button" data-sidebar-toggle aria-label="Open navigation"><i class="bi bi-list" aria-hidden="true"></i></button><div class="topbar-context"><i class="bi bi-heart-pulse" aria-hidden="true"></i><span>Clarity workspace</span><i class="bi bi-chevron-right" aria-hidden="true"></i><strong>Overview</strong></div></div>
+        <div class="topbar-actions"><label class="dashboard-search"><i class="bi bi-search" aria-hidden="true"></i><input type="search" placeholder="Search patients, signals..." data-global-search></label><button class="dashboard-icon-button" type="button" data-demo-action data-success-message="You are all caught up for now." aria-label="Notifications"><i class="bi bi-bell" aria-hidden="true"></i><span class="notification-dot"></span></button><div class="dropdown-wrap" data-dropdown><button class="topbar-profile" type="button" data-dropdown-trigger aria-expanded="false" aria-haspopup="true" aria-controls="profile-menu"><span class="avatar avatar-lime avatar-small">JM</span><span class="topbar-profile-copy"><strong>Jordan Morgan</strong><span data-dashboard-label>Admin</span><span class="topbar-profile-email" data-user-email>jordan.morgan@northstar.org</span></span><i class="bi bi-chevron-down" aria-hidden="true"></i></button><div class="dropdown-menu profile-menu" id="profile-menu" data-dropdown-menu hidden><div class="dropdown-head"><span class="avatar avatar-lime">JM</span><span class="dropdown-head-copy"><strong>Jordan Morgan</strong><span data-user-email>jordan.morgan@northstar.org</span></span></div><p class="dropdown-menu-label">Dashboards</p><a class="dropdown-item" href="dashboard.html"><i class="bi bi-grid-1x2" aria-hidden="true"></i>Overview</a><a class="dropdown-item" href="triage.html"><i class="bi bi-columns-gap" aria-hidden="true"></i>Triage board</a><span class="dropdown-separator"></span><p class="dropdown-menu-label">Workspace</p><a class="dropdown-item" href="team.html"><i class="bi bi-person-badge" aria-hidden="true"></i>Team</a><a class="dropdown-item" href="settings.html"><i class="bi bi-sliders" aria-hidden="true"></i>Settings</a><span class="dropdown-separator"></span><button class="dropdown-item danger" type="button" data-logout><i class="bi bi-box-arrow-right" aria-hidden="true"></i>Log out</button></div></div></div>
+      </header>
+
+      <main class="dashboard-content">
+        <section class="dashboard-page-header">
+          <div><span class="dashboard-eyebrow">Friday, September 25, 2026</span><h1>Good morning, <em>Dr. Morgan.</em></h1><p>Here’s the clearest view of what needs your attention across Northstar Health today.</p></div>
+          <div class="dashboard-header-actions"><button class="button button-outline" type="button" data-demo-action data-success-message="Your workspace report is being prepared."><i class="bi bi-download" aria-hidden="true"></i>Export report</button><button class="button button-dark" type="button" data-demo-action data-success-message="Invite flow opened for your workspace."><i class="bi bi-person-plus" aria-hidden="true"></i>Invite teammate</button></div>
+        </section>
+
+        <section class="metric-grid" aria-label="Workspace metrics">
+          <article class="metric-card"><div class="metric-label"><span class="metric-icon"><i class="bi bi-people" aria-hidden="true"></i></span>Active patients</div><div class="metric-value">1,248 <small>+8.4%</small></div><div class="metric-trend"><i class="bi bi-arrow-up-right" aria-hidden="true"></i>vs. last month</div></article>
+          <article class="metric-card accent"><div class="metric-label"><span class="metric-icon"><i class="bi bi-check2-circle" aria-hidden="true"></i></span>Care plan adherence</div><div class="metric-value">94.8% <small>+2.1%</small></div><div class="metric-trend"><i class="bi bi-arrow-up-right" aria-hidden="true"></i>vs. last month</div></article>
+          <article class="metric-card warn"><div class="metric-label"><span class="metric-icon"><i class="bi bi-activity" aria-hidden="true"></i></span>Signals to review</div><div class="metric-value">27 <small>today</small></div><div class="metric-trend down"><i class="bi bi-arrow-down-right" aria-hidden="true"></i>6 fewer than yesterday</div></article>
+          <article class="metric-card"><div class="metric-label"><span class="metric-icon"><i class="bi bi-stopwatch" aria-hidden="true"></i></span>Avg. response time</div><div class="metric-value">12h <small>−3h</small></div><div class="metric-trend"><i class="bi bi-arrow-down-right" aria-hidden="true"></i>vs. last month</div></article>
+        </section>
+
+        <section class="dashboard-grid dashboard-grid-main">
+          <article class="dashboard-panel dashboard-span-7 chart-card">
+            <div class="panel-header"><div class="panel-heading"><h2>Care flow</h2><p>Patients moving through their next best action</p><div class="chart-legend"><span class="legend-item"><span class="legend-dot"></span>Completed actions</span><span class="legend-item"><span class="legend-dot lime"></span>Target</span></div></div><a class="panel-action" href="analytics.html">View analytics <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></div>
+            <div class="panel-body"><div class="trend-chart"><svg viewBox="0 0 700 235" role="img" aria-label="Care flow trend rising over the last seven days"><defs><linearGradient id="dashboardArea" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#0b5b52" stop-opacity=".28"></stop><stop offset="100%" stop-color="#0b5b52" stop-opacity="0"></stop></linearGradient></defs><line class="chart-gridline" x1="30" x2="680" y1="34" y2="34"></line><line class="chart-gridline" x1="30" x2="680" y1="84" y2="84"></line><line class="chart-gridline" x1="30" x2="680" y1="134" y2="134"></line><line class="chart-gridline" x1="30" x2="680" y1="184" y2="184"></line><text class="chart-axis-label" x="0" y="38">100</text><text class="chart-axis-label" x="5" y="88">75</text><text class="chart-axis-label" x="5" y="138">50</text><text class="chart-axis-label" x="5" y="188">25</text><path class="chart-area" d="M35 161 C90 157 111 143 158 148 S228 125 270 132 S331 106 378 116 S441 92 482 100 S551 74 589 83 S642 54 675 64 L675 196 L35 196 Z"></path><path class="chart-line" d="M35 161 C90 157 111 143 158 148 S228 125 270 132 S331 106 378 116 S441 92 482 100 S551 74 589 83 S642 54 675 64"></path><path class="chart-line lime" d="M35 178 C90 172 111 166 158 165 S228 151 270 155 S331 138 378 145 S441 126 482 132 S551 111 589 119 S642 102 675 107"></path><circle class="chart-point" cx="35" cy="161" r="4"></circle><circle class="chart-point" cx="158" cy="148" r="4"></circle><circle class="chart-point" cx="270" cy="132" r="4"></circle><circle class="chart-point" cx="378" cy="116" r="4"></circle><circle class="chart-point" cx="482" cy="100" r="4"></circle><circle class="chart-point" cx="589" cy="83" r="4"></circle><circle class="chart-point" cx="675" cy="64" r="4"></circle><text class="chart-axis-label" x="31" y="222">Mon</text><text class="chart-axis-label" x="148" y="222">Tue</text><text class="chart-axis-label" x="263" y="222">Wed</text><text class="chart-axis-label" x="370" y="222">Thu</text><text class="chart-axis-label" x="476" y="222">Fri</text><text class="chart-axis-label" x="578" y="222">Sat</text><text class="chart-axis-label" x="661" y="222">Sun</text></svg></div></div>
+          </article>
+          <article class="dashboard-panel dashboard-span-5">
+            <div class="panel-header"><div class="panel-heading"><h2>Priority signals</h2><p>Small moments that need a human response</p></div><a class="panel-action" href="signals.html">See all <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></div>
+            <div class="panel-body"><div class="signal-list"><div class="signal-row"><span class="signal-marker"><i class="bi bi-exclamation-lg" aria-hidden="true"></i></span><div class="signal-copy"><strong>Missed medication follow-up</strong><p>Jordan M. · Recovery plan</p></div><time class="signal-time">8m</time></div><div class="signal-row"><span class="signal-marker warning"><i class="bi bi-clock" aria-hidden="true"></i></span><div class="signal-copy"><strong>Care plan review due today</strong><p>Priya S. · 4 open tasks</p></div><time class="signal-time">24m</time></div><div class="signal-row"><span class="signal-marker positive"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i></span><div class="signal-copy"><strong>Positive momentum detected</strong><p>Marcus L. · 7 day trend</p></div><time class="signal-time">1h</time></div><div class="signal-row"><span class="signal-marker"><i class="bi bi-person-exclamation" aria-hidden="true"></i></span><div class="signal-copy"><strong>New patient intake incomplete</strong><p>Avery R. · 2 fields missing</p></div><time class="signal-time">2h</time></div></div></div>
+          </article>
+        </section>
+
+        <section class="dashboard-grid dashboard-grid-main mt-3">
+          <article class="dashboard-panel dashboard-span-8">
+            <div class="panel-header"><div class="panel-heading"><h2>Patient momentum</h2><p>A quick read on the people closest to a change</p></div><a class="panel-action" href="patients.html">View all patients <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></div>
+            <div class="panel-body pt-3"><div class="dashboard-table-wrap"><table class="dashboard-table"><thead><tr><th>Patient</th><th>Status</th><th>Adherence</th><th>Next action</th><th>Owner</th><th></th></tr></thead><tbody><tr><td><div class="patient-cell"><span class="avatar avatar-lime avatar-small">JM</span><span class="patient-cell-copy"><span class="table-primary">Jordan Mitchell</span><span class="table-secondary">Recovery plan · Day 12</span></span></div></td><td><span class="dashboard-status">On track</span></td><td><div class="progress-cell"><span class="progress-track"><span class="progress-value" style="width:92%"></span></span><span class="progress-number">92%</span></div></td><td>Check follow-up</td><td>Jordan M.</td><td><a class="table-link" href="patient-detail.html">Open <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></td></tr><tr><td><div class="patient-cell"><span class="avatar avatar-lavender avatar-small">PS</span><span class="patient-cell-copy"><span class="table-primary">Priya Shah</span><span class="table-secondary">Chronic care · Week 8</span></span></div></td><td><span class="dashboard-status watch">Needs review</span></td><td><div class="progress-cell"><span class="progress-track"><span class="progress-value warning" style="width:71%"></span></span><span class="progress-number">71%</span></div></td><td>Review care plan</td><td>Sam R.</td><td><a class="table-link" href="patient-detail.html">Open <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></td></tr><tr><td><div class="patient-cell"><span class="avatar avatar-sand avatar-small">ML</span><span class="patient-cell-copy"><span class="table-primary">Marcus Lee</span><span class="table-secondary">Wellness · Week 3</span></span></div></td><td><span class="dashboard-status">On track</span></td><td><div class="progress-cell"><span class="progress-track"><span class="progress-value" style="width:88%"></span></span><span class="progress-number">88%</span></div></td><td>Send check-in</td><td>Priya S.</td><td><a class="table-link" href="patient-detail.html">Open <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></td></tr></tbody></table></div></div>
+          </article>
+          <article class="dashboard-panel dashboard-span-4">
+            <div class="panel-header"><div class="panel-heading"><h2>Quick actions</h2><p>Keep the momentum moving</p></div></div>
+            <div class="panel-body pt-3"><div class="quick-action-list"><a class="quick-action" href="signals.html"><i class="bi bi-activity" aria-hidden="true"></i>Review priority signals <i class="bi bi-arrow-right" aria-hidden="true"></i></a><a class="quick-action" href="patients.html"><i class="bi bi-person-plus" aria-hidden="true"></i>Add a patient <i class="bi bi-arrow-right" aria-hidden="true"></i></a><a class="quick-action" href="analytics.html"><i class="bi bi-file-earmark-arrow-down" aria-hidden="true"></i>Build a report <i class="bi bi-arrow-right" aria-hidden="true"></i></a><a class="quick-action" href="team.html"><i class="bi bi-person-badge" aria-hidden="true"></i>Manage your team <i class="bi bi-arrow-right" aria-hidden="true"></i></a></div></div>
+          </article>
+        </section>
+
+        <section class="dashboard-grid dashboard-grid-equal mt-3">
+          <article class="dashboard-panel dashboard-span-6">
+            <div class="panel-header"><div class="panel-heading"><h2>Team activity</h2><p>What changed since your last visit</p></div><a class="panel-action" href="team.html">Open team <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></div>
+            <div class="panel-body pt-3"><div class="activity-list"><div class="activity-item"><span class="avatar avatar-teal avatar-small">SR</span><div class="activity-item-copy"><p><strong>Sam Rivera</strong> acknowledged a medication signal for <strong>Jordan Mitchell</strong>.</p><time>8 minutes ago</time></div></div><div class="activity-item"><span class="avatar avatar-sand avatar-small">PS</span><div class="activity-item-copy"><p><strong>Priya Shah</strong> updated the care plan for <strong>Marcus Lee</strong>.</p><time>42 minutes ago</time></div></div><div class="activity-item"><span class="avatar avatar-lavender avatar-small">AR</span><div class="activity-item-copy"><p><strong>Alex Reed</strong> joined the Northstar workspace.</p><time>Yesterday at 4:18 PM</time></div></div></div></div>
+          </article>
+          <article class="dashboard-panel dashboard-span-6">
+            <div class="panel-header"><div class="panel-heading"><h2>Care plan mix</h2><p>Active plans across your workspace</p></div><a class="panel-action" href="analytics.html">Explore <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></div>
+            <div class="panel-body pt-3"><div class="donut-layout"><div class="donut-chart"><div class="donut-center"><strong>1,248</strong><span>active</span></div></div><div class="donut-legend"><div class="donut-legend-item"><span><span class="legend-square"></span>Recovery</span><strong>68%</strong></div><div class="donut-legend-item"><span><span class="legend-square lime"></span>Chronic care</span><strong>20%</strong></div><div class="donut-legend-item"><span><span class="legend-square neutral"></span>Wellness</span><strong>12%</strong></div></div></div></div>
+          </article>
+        </section>
+
+        <section class="dashboard-grid dashboard-grid-equal mt-3">
+          <article class="dashboard-panel dashboard-span-7">
+            <div class="panel-header"><div class="panel-heading"><h2>This week</h2><p>What is already moving without you</p></div><a class="panel-action" href="care-plans.html">Open care plans <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></div>
+            <div class="panel-body pt-3">
+              <div class="care-plan-list">
+                <div class="care-plan-item"><i class="bi bi-check2-circle" aria-hidden="true"></i><div class="care-plan-item-copy"><strong>Post-discharge huddles, Ward 4</strong><span>Every weekday at 8:15 AM · 6 patients reviewed each day</span></div><span class="dashboard-status resolved">On track</span></div>
+                <div class="care-plan-item"><i class="bi bi-arrow-repeat" aria-hidden="true"></i><div class="care-plan-item-copy"><strong>Recovery check-in outreach</strong><span>Batch runs today at 2:00 PM · 41 patients queued</span></div><span class="dashboard-status watch">Queued</span></div>
+                <div class="care-plan-item"><i class="bi bi-calendar-event" aria-hidden="true"></i><div class="care-plan-item-copy"><strong>Care plan reviews due this week</strong><span>18 plans reach their review checkpoint</span></div><span class="dashboard-status high">18 due</span></div>
+                <div class="care-plan-item"><i class="bi bi-people" aria-hidden="true"></i><div class="care-plan-item-copy"><strong>Care coordinator capacity</strong><span>Alex Reed and Sam Rivera are at 82% of weekly load</span></div><span class="progress-number">82%</span></div>
+              </div>
+            </div>
+            <div class="panel-foot"><span>Last recalculated 8 minutes ago</span><button class="panel-action border-0 p-0" type="button" data-demo-action data-success-message="Week plan recalculated with the latest signals."><i class="bi bi-arrow-clockwise" aria-hidden="true"></i>Recalculate</button></div>
+          </article>
+          <article class="dashboard-panel dashboard-span-5">
+            <div class="panel-header"><div class="panel-heading"><h2>Where the time goes</h2><p>Adherence by pathway this week</p></div><a class="panel-action" href="analytics.html">Details <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a></div>
+            <div class="panel-body pt-3">
+              <div class="rank-list">
+                <div class="rank-item"><span class="rank-copy"><span class="avatar avatar-lime avatar-small">RC</span>Recovery</span><span class="progress-number">96%</span><span class="rank-track"><span class="rank-value" style="width:96%"></span></span></div>
+                <div class="rank-item"><span class="rank-copy"><span class="avatar avatar-teal avatar-small">CC</span>Chronic care</span><span class="progress-number">88%</span><span class="rank-track"><span class="rank-value" style="width:88%"></span></span></div>
+                <div class="rank-item"><span class="rank-copy"><span class="avatar avatar-sand avatar-small">WN</span>Wellness</span><span class="progress-number">74%</span><span class="rank-track"><span class="rank-value warning" style="width:74%"></span></span></div>
+                <div class="rank-item"><span class="rank-copy"><span class="avatar avatar-lavender avatar-small">PD</span>Post-discharge</span><span class="progress-number">61%</span><span class="rank-track"><span class="rank-value high" style="width:61%"></span></span></div>
+              </div>
+              <div class="note-box mt-3"><i class="bi bi-lightbulb me-1" aria-hidden="true"></i>Post-discharge adherence is the only pathway below target. Three plans have no owner assigned this week.</div>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+  </div>
+  <div class="toast" data-toast role="status" aria-live="polite"><i class="bi bi-check-circle" aria-hidden="true"></i><span data-toast-message>Done.</span></div>
+  <script src="dashboard.js"></script>
+</body>
+</html>

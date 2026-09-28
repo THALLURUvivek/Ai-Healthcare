@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f2">
+  <meta name="description" content="Create your Clarity care intelligence workspace account.">
+  <title>Create an account — Clarity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="site-shell">
+    <header class="site-header" id="top">
+      <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+        <div class="container">
+          <a class="navbar-brand brand" href="index.html" aria-label="Clarity home">
+            <img class="brand-logo" src="images/image.png" alt="Clarity">
+          </a>
+          <button class="navbar-toggler menu-button" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span><span></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" href="platform.html">Platform</a></li>
+              <li class="nav-item"><a class="nav-link" href="solutions.html">Solutions</a></li>
+              <li class="nav-item"><a class="nav-link" href="approach.html">Approach</a></li>
+              <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+            </ul>
+            <div class="nav-actions d-flex align-items-center gap-3">
+              <a class="nav-login" href="signin.html">Sign in</a>
+              <a class="button button-dark button-small active" href="signup.html" aria-current="page">Create account <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="page-hero auth-hero">
+        <div class="container">
+          <div class="eyebrow" data-reveal="up"><span class="eyebrow-dot"></span> Clarity workspace</div>
+          <h1 data-reveal="up" data-delay="0.08">Join your team’s <span class="display-italic">clarity.</span></h1>
+          <p class="page-lede" data-reveal="up" data-delay="0.16">Create your account and bring the people, signals, and decisions that matter into one shared view.</p>
+          <div class="page-hero-actions" data-reveal="up" data-delay="0.24"><a class="button button-dark" href="#signup-form">Create your account <i class="bi bi-arrow-down" aria-hidden="true"></i></a><a class="text-link" href="signin.html">Already have an account? Sign in <i class="bi bi-arrow-right" aria-hidden="true"></i></a></div>
+          <div class="page-hero-meta" data-reveal="up" data-delay="0.32"><strong>Invitation-only access</strong><span>Your organization keeps control of who can join.</span></div>
+        </div>
+      </section>
+
+      <section class="page-form-section auth-form-section" id="signup-form">
+        <div class="container page-form-layout">
+          <div class="page-form-copy" data-reveal="up">
+            <div class="section-kicker"><span>01</span> Create your account</div>
+            <h2>Make room for a <span class="display-italic">clearer next step.</span></h2>
+            <p>Set up your Clarity profile, then connect with the care team and workspace you already care about.</p>
+            <ul class="page-check-list">
+              <li><i class="bi bi-check2" aria-hidden="true"></i><div><strong>One shared workspace</strong><span>Give your team one calm place to see the work.</span></div></li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i><div><strong>Built for better collaboration</strong><span>Keep context close to every decision that follows.</span></div></li>
+            </ul>
+          </div>
+          <form class="page-form auth-form" action="signin.html?signup=success" method="post" data-auth-form data-auth-mode="signup" data-auth-redirect="signin.html?signup=success" data-auth-message="Your account details are ready. Taking you to sign in..." data-dashboard-hint-prefix="After setup you will sign in and land on " data-reveal="up" data-delay="0.12">
+            <div class="form-row">
+              <div class="form-field"><label for="first-name">First name</label><input id="first-name" name="first-name" type="text" autocomplete="given-name" placeholder="Jordan" required></div>
+              <div class="form-field"><label for="last-name">Last name</label><input id="last-name" name="last-name" type="text" autocomplete="family-name" placeholder="Morgan" required></div>
+            </div>
+            <div class="form-field"><label for="email">Work email</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@organization.org" required></div>
+            <div class="form-field"><label for="organization">Organization</label><input id="organization" name="organization" type="text" autocomplete="organization" placeholder="Your organization" required></div>
+            <div class="dashboard-picker" data-dashboard-picker>
+              <p class="dashboard-picker-label" id="signup-dashboard-label">Choose your dashboard</p>
+              <div class="dashboard-picker-grid" role="radiogroup" aria-labelledby="signup-dashboard-label">
+                <label class="dashboard-option"><input type="radio" name="dashboard" value="overview" data-dashboard-target="dashboard.html" data-dashboard-destination="the overview dashboard" checked><span class="dashboard-option-inner"><span class="dashboard-option-icon"><i class="bi bi-grid-1x2" aria-hidden="true"></i></span><span class="dashboard-option-copy"><strong>Overview</strong><span>Plans, patients, and signals in one view</span></span></span></label>
+                <label class="dashboard-option"><input type="radio" name="dashboard" value="triage" data-dashboard-target="triage.html" data-dashboard-destination="the triage board"><span class="dashboard-option-inner"><span class="dashboard-option-icon"><i class="bi bi-columns-gap" aria-hidden="true"></i></span><span class="dashboard-option-copy"><strong>Triage</strong><span>Acuity, handoffs, and open cases</span></span></span></label>
+              </div>
+              <p class="dashboard-picker-hint" data-dashboard-hint>After setup you will sign in and land on the overview dashboard.</p>
+            </div>
+            <div class="form-field"><label for="password">Create a password</label><div class="password-input"><input id="password" name="password" type="password" autocomplete="new-password" placeholder="At least 8 characters" minlength="8" aria-describedby="password-hint" data-password required><button class="password-toggle" type="button" data-password-toggle aria-label="Show password" aria-pressed="false"><i class="bi bi-eye" aria-hidden="true"></i></button></div><span class="field-hint" id="password-hint">Use at least 8 characters.</span></div>
+            <div class="form-field"><label for="confirm-password">Confirm password</label><div class="password-input"><input id="confirm-password" name="confirm-password" type="password" autocomplete="new-password" placeholder="Repeat your password" minlength="8" data-confirm-password required></div></div>
+            <label class="terms-check"><input name="terms" type="checkbox" value="accepted" required><span>I agree to the Clarity <a href="index.html">Terms</a> and <a href="index.html">Privacy Policy</a>.</span></label>
+            <div class="page-form-message" data-form-message role="status" aria-live="polite"></div>
+            <button class="button button-dark w-100" type="submit">Create account <i class="bi bi-arrow-up-right" aria-hidden="true"></i></button>
+            <p class="form-note auth-switch">Already have an account? <a class="text-link" href="signin.html">Sign in instead</a><br><a class="text-link" href="dashboard.html">Preview the demo workspace</a>.</p>
+          </form>
+        </div>
+      </section>
+
+      <section class="page-section" id="what-you-get">
+        <div class="container">
+          <div class="page-intro" data-reveal="up"><div><div class="section-kicker"><span>02</span> What you get</div><h2>Everything your team needs <span class="display-italic">from day one.</span></h2></div><p>Your account comes with a full workspace. Your administrator controls who sees what.</p></div>
+          <div class="integration-grid">
+            <div class="integration-tile" data-reveal="up"><span class="integration-mark"><i class="bi bi-clipboard2-pulse" aria-hidden="true"></i></span><span class="integration-copy"><strong>Care plans</strong><span>Goals, checkpoints, owners</span></span></div>
+            <div class="integration-tile" data-reveal="up" data-delay="0.05"><span class="integration-mark"><i class="bi bi-activity" aria-hidden="true"></i></span><span class="integration-copy"><strong>Early signals</strong><span>Ranked by likely impact</span></span></div>
+            <div class="integration-tile" data-reveal="up" data-delay="0.1"><span class="integration-mark"><i class="bi bi-people" aria-hidden="true"></i></span><span class="integration-copy"><strong>Patient directory</strong><span>Filterable, sortable, shared</span></span></div>
+            <div class="integration-tile" data-reveal="up" data-delay="0.15"><span class="integration-mark"><i class="bi bi-bar-chart" aria-hidden="true"></i></span><span class="integration-copy"><strong>Cohort analytics</strong><span>Outcomes you can report</span></span></div>
+            <div class="integration-tile" data-reveal="up" data-delay="0.2"><span class="integration-mark"><i class="bi bi-chat-left-text" aria-hidden="true"></i></span><span class="integration-copy"><strong>Team messaging</strong><span>Discuss a signal in context</span></span></div>
+            <div class="integration-tile" data-reveal="up" data-delay="0.25"><span class="integration-mark"><i class="bi bi-bell" aria-hidden="true"></i></span><span class="integration-copy"><strong>Smart alerts</strong><span>Only what needs you</span></span></div>
+            <div class="integration-tile" data-reveal="up" data-delay="0.3"><span class="integration-mark"><i class="bi bi-clock-history" aria-hidden="true"></i></span><span class="integration-copy"><strong>Full history</strong><span>Every decision, timestamped</span></span></div>
+            <div class="integration-tile" data-reveal="up" data-delay="0.35"><span class="integration-mark"><i class="bi bi-download" aria-hidden="true"></i></span><span class="integration-copy"><strong>Exports</strong><span>Standard formats, any time</span></span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section page-section-alt" id="get-started">
+        <div class="container page-split">
+          <div class="page-media" data-reveal="scale">
+            <img decoding="async" src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=1000&q=86" alt="New care team member being onboarded" loading="lazy">
+            <div class="page-media-badge"><i class="bi bi-rocket-takeoff" aria-hidden="true"></i><div><strong>Live in an afternoon.</strong><span>Most teams are productive on day one.</span></div></div>
+          </div>
+          <div class="page-split-copy" data-reveal="up" data-delay="0.12">
+            <div class="section-kicker"><span>03</span> How it starts</div>
+            <h2>Three steps to a <span class="display-italic">clearer morning.</span></h2>
+            <p class="page-split-lede">No implementation project required. Most people are reviewing their first real signals before the end of the day.</p>
+            <ul class="page-check-list">
+              <li><i class="bi bi-check2" aria-hidden="true"></i><div><strong>Join your workspace</strong><span>Your administrator invites you and sets your role, so you see only what you need.</span></div></li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i><div><strong>Connect your context</strong><span>Review your caseload, confirm the plan owners, and mark the priorities you care about.</span></div></li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i><div><strong>Work the queue</strong><span>Clarity surfaces what changed. You decide what happens next and note why.</span></div></li>
+            </ul>
+            <a class="button button-outline" href="dashboard.html">Preview the workspace <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container"><div class="footer-main"><div class="footer-brand"><a class="brand" href="index.html"><img class="brand-logo" src="images/image.png" alt="Clarity"></a><p>Intelligence for better care.</p></div><div class="footer-links"><div><span class="footer-label">Explore</span><a href="platform.html">Platform</a><a href="solutions.html">Solutions</a><a href="approach.html">Our approach</a></div><div><span class="footer-label">Company</span><a href="resources.html">Resources</a><a href="book-a-demo.html">About Clarity</a><a href="book-a-demo.html">Careers <small>3</small></a></div><div><span class="footer-label">Connect</span><a href="book-a-demo.html">Contact</a><a href="book-a-demo.html">LinkedIn <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a><a href="book-a-demo.html">Instagram <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a><div class="footer-social" aria-label="Clarity on social media"><a href="error.html" aria-label="Clarity on LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a><a href="error.html" aria-label="Clarity on Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a><a href="error.html" aria-label="Clarity on X"><i class="bi bi-twitter-x" aria-hidden="true"></i></a><a href="error.html" aria-label="Clarity on YouTube"><i class="bi bi-youtube" aria-hidden="true"></i></a></div></div></div></div><div class="footer-bottom"><span>© 2024 Clarity Health, Inc.</span><div><a href="index.html">Privacy</a><a href="index.html">Terms</a><a href="index.html">Accessibility</a></div><span>Made for the people who care.</span></div></div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
