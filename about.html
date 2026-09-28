@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f6f7f2">
-  <meta name="description" content="Access your Clarity care intelligence workspace.">
-  <title>Sign in — Clarity</title>
+  <meta name="description" content="About Clarity Health — our mission, values, and team building intelligence for better care.">
+  <title>About — Clarity</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -31,9 +31,11 @@
               <li class="nav-item"><a class="nav-link" href="solutions.html">Solutions</a></li>
               <li class="nav-item"><a class="nav-link" href="approach.html">Approach</a></li>
               <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+              <li class="nav-item"><a class="nav-link active" href="about.html" aria-current="page">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
             <div class="nav-actions d-flex align-items-center gap-3">
-              <a class="nav-login active" href="signin.html" aria-current="page">Sign in</a>
+              <a class="nav-login" href="signin.html">Sign in</a>
               <a class="button button-dark button-small" href="book-a-demo.html">Book a demo <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
             </div>
           </div>
@@ -42,81 +44,98 @@
     </header>
 
     <main id="main-content">
-      <section class="page-hero auth-hero">
+      <section class="page-hero">
         <div class="container">
-          <div class="eyebrow" data-reveal="up"><span class="eyebrow-dot"></span> Clarity workspace</div>
-          <h1 data-reveal="up" data-delay="0.08">Welcome back to <span class="display-italic">clarity.</span></h1>
-          <p class="page-lede" data-reveal="up" data-delay="0.16">Sign in to the care intelligence workspace that helps your team see what matters and move forward together.</p>
-          <div class="page-hero-actions" data-reveal="up" data-delay="0.24"><a class="button button-dark" href="#sign-in-form">Sign in to Clarity <i class="bi bi-arrow-down" aria-hidden="true"></i></a><a class="text-link" href="signup.html">Create an account <i class="bi bi-arrow-right" aria-hidden="true"></i></a></div>
-          <div class="page-hero-meta" data-reveal="up" data-delay="0.32"><strong>Invitation-only access</strong><span>Your organization keeps control of its workspace.</span></div>
-        </div>
-      </section>
-
-      <section class="page-form-section auth-form-section" id="sign-in-form">
-        <div class="container page-form-layout">
-          <div class="page-form-copy" data-reveal="up">
-            <div class="section-kicker"><span>01</span> Secure sign in</div>
-            <h2>One place for your team’s <span class="display-italic">shared context.</span></h2>
-            <p>Clarity keeps clinical, operational, and patient signals together without adding another place for your team to search.</p>
-            <ul class="page-check-list">
-              <li><i class="bi bi-check2" aria-hidden="true"></i><div><strong>One secure workspace</strong><span>Bring your team into the same view of the work.</span></div></li>
-              <li><i class="bi bi-check2" aria-hidden="true"></i><div><strong>Built for your organization</strong><span>Access is managed through your approved identity provider.</span></div></li>
-            </ul>
+          <div class="eyebrow" data-reveal="up"><span class="eyebrow-dot"></span> About Clarity</div>
+          <h1 data-reveal="up" data-delay="0.08">Making care feel <span class="display-italic">more human.</span></h1>
+          <p class="page-lede" data-reveal="up" data-delay="0.16">Clarity is the intelligence layer for healthcare teams, bringing signal to the surface so people have time for the work that matters.</p>
+          <div class="page-hero-actions" data-reveal="up" data-delay="0.24">
+            <a class="button button-dark" href="contact.html">Get in touch <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+            <a class="text-link" href="platform.html">Explore the platform <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
           </div>
-          <form class="page-form auth-form" action="dashboard.html?welcome=1" method="post" data-auth-form data-auth-mode="signin" data-auth-redirect="dashboard.html?welcome=1" data-auth-message="Welcome back. Taking you to your workspace..." data-dashboard-hint-prefix="You will land on " data-reveal="up" data-delay="0.12">
-            <div class="form-field"><label for="email">Work email</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@organization.org" required></div>
-            <div class="form-field"><label for="password">Password</label><div class="password-input"><input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" data-password required><button class="password-toggle" type="button" data-password-toggle aria-label="Show password" aria-pressed="false"><i class="bi bi-eye" aria-hidden="true"></i></button></div></div>
-            <div class="form-options"><label class="check-control"><input name="remember" type="checkbox" value="yes"><span>Remember me</span></label><a class="form-link" href="mailto:hello@clarity.health?subject=Clarity%20password%20reset">Forgot password?</a></div>
-            <div class="dashboard-picker" data-dashboard-picker>
-              <p class="dashboard-picker-label" id="signin-dashboard-label">Choose your role</p>
-              <div class="dashboard-picker-grid" role="radiogroup" aria-labelledby="signin-dashboard-label">
-                <label class="dashboard-option"><input type="radio" name="role" value="admin" data-dashboard-target="dashboard.html" data-dashboard-destination="the admin dashboard" checked><span class="dashboard-option-inner"><span class="dashboard-option-icon"><i class="bi bi-shield-lock" aria-hidden="true"></i></span><span class="dashboard-option-copy"><strong>Admin</strong><span>Full workspace, team, and settings access</span></span></span></label>
-                <label class="dashboard-option"><input type="radio" name="role" value="doctor" data-dashboard-target="triage.html" data-dashboard-destination="the doctor dashboard"><span class="dashboard-option-inner"><span class="dashboard-option-icon"><i class="bi bi-heart-pulse" aria-hidden="true"></i></span><span class="dashboard-option-copy"><strong>Doctor</strong><span>Patient rounds, care plans, and open signals</span></span></span></label>
-              </div>
-              <p class="dashboard-picker-hint" data-dashboard-hint>You will land on the admin dashboard.</p>
-            </div>
-            <div class="page-form-message" data-form-message role="status" aria-live="polite"></div>
-            <button class="button button-dark w-100" type="submit">Sign in <i class="bi bi-arrow-up-right" aria-hidden="true"></i></button>
-            <p class="form-note auth-switch">Have an invite? <a class="text-link" href="signup.html">Create your account</a><br>Need help? <a class="text-link" href="mailto:hello@clarity.health">Contact support</a><br><a class="text-link" href="dashboard.html">Preview the demo workspace</a>.</p>
-          </form>
         </div>
       </section>
 
-      <section class="page-section" id="sign-in-benefits">
+      <section class="page-section" id="mission">
+        <div class="container page-split">
+          <div class="page-media" data-reveal="scale">
+            <img decoding="async" src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1000&q=86" alt="Clinician reviewing information with a colleague" loading="lazy">
+            <div class="page-media-badge"><i class="bi bi-heart-pulse-fill" aria-hidden="true"></i><div><strong>Care, with context.</strong><span>Human judgment stays in the loop.</span></div></div>
+          </div>
+          <div class="page-split-copy" data-reveal="up" data-delay="0.12">
+            <div class="section-kicker"><span>01</span> Our mission</div>
+            <h2>Technology that gives <span class="display-italic">time back</span> to care.</h2>
+            <p class="page-split-lede">We believe the best healthcare tools fade into the background. Clarity connects the right signals to the right people so teams can act earlier and stay present with patients.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section page-section-alt" id="values">
         <div class="container">
-          <div class="page-intro" data-reveal="up"><div><div class="section-kicker"><span>02</span> What you will see</div><h2>The day starts <span class="display-italic">already sorted.</span></h2></div><p>Clarity ranks what needs a decision before the first round, so the first hour of the day goes to patients instead of charts.</p></div>
+          <div class="page-intro" data-reveal="up">
+            <div><div class="section-kicker"><span>02</span> Our values</div><h2>Built on <span class="display-italic">trust</span> and clarity.</h2></div>
+            <p>Privacy, explainability, and simplicity guide everything we build.</p>
+          </div>
           <div class="page-card-grid">
-            <article class="page-card page-card-dark" data-reveal="up">
-              <div class="page-card-icon"><i class="bi bi-activity" aria-hidden="true"></i></div>
-              <h3>Signals, ranked</h3>
-              <p>Every open signal ordered by likely impact, with the evidence attached so you can judge it in seconds.</p>
-              <a class="page-card-link" href="signals.html">See the signal queue <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+            <article class="page-card" data-reveal="up">
+              <div class="page-card-icon"><i class="bi bi-shield-check" aria-hidden="true"></i></div>
+              <h3>Privacy by design</h3>
+              <p>Minimum-necessary access, audit trails, and no secondary use of your data.</p>
             </article>
-            <article class="page-card page-card-lime" data-reveal="up" data-delay="0.1">
-              <div class="page-card-icon"><i class="bi bi-people" aria-hidden="true"></i></div>
-              <h3>Your whole panel</h3>
-              <p>Adherence, risk, and next action for every patient on your caseload, in one filtered table.</p>
-              <a class="page-card-link" href="patients.html">Open the directory <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
-              <div class="page-card-number">07</div>
+            <article class="page-card page-card-dark" data-reveal="up" data-delay="0.1">
+              <div class="page-card-icon"><i class="bi bi-patch-check" aria-hidden="true"></i></div>
+              <h3>Explainable signals</h3>
+              <p>Every recommendation shows the evidence so clinicians can agree, disagree, and document why.</p>
+              <div class="page-card-number">02</div>
             </article>
-            <article class="page-card" data-reveal="up" data-delay="0.2">
-              <div class="page-card-icon"><i class="bi bi-bar-chart" aria-hidden="true"></i></div>
-              <h3>Progress you can explain</h3>
-              <p>Cohort trends and outcome reporting your leadership team can read without a translator.</p>
-              <a class="page-card-link" href="analytics.html">View analytics <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+            <article class="page-card page-card-lime" data-reveal="up" data-delay="0.2">
+              <div class="page-card-icon"><i class="bi bi-lightbulb" aria-hidden="true"></i></div>
+              <h3>Simple by default</h3>
+              <p>Calm, intentional design that reduces noise and helps teams focus on what matters most.</p>
+              <div class="page-card-visual"><i class="bi bi-plus-lg" aria-hidden="true"></i></div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="trust-section" id="sign-in-security" aria-label="Account security">
+      <section class="page-section" id="team">
         <div class="container">
-          <div class="metric-heading" data-reveal="up"><div class="section-kicker light-kicker"><span>03</span> Your sign in is protected</div><p>Clarity handles the most sensitive data in healthcare. Here is what that means for your account.</p></div>
-          <div class="trust-grid">
-            <article class="trust-item" data-reveal="up"><i class="bi bi-fingerprint" aria-hidden="true"></i><h3>SAML single sign-on</h3><p>Your identity provider, not a separate password. Your organization controls access centrally.</p></article>
-            <article class="trust-item" data-reveal="up" data-delay="0.1"><i class="bi bi-person-check" aria-hidden="true"></i><h3>Role-based access</h3><p>Each person only sees the patients and signals their role requires, enforced automatically.</p></article>
-            <article class="trust-item" data-reveal="up" data-delay="0.2"><i class="bi bi-journal-text" aria-hidden="true"></i><h3>Full audit trail</h3><p>Every view, search, and export is logged and available to your administrators on request.</p></article>
-            <article class="trust-item" data-reveal="up" data-delay="0.3"><i class="bi bi-shield-lock" aria-hidden="true"></i><h3>Revoke instantly</h3><p>Offboard someone in one click through SCIM, and their sessions end immediately.</p></article>
+          <div class="page-intro" data-reveal="up">
+            <div><div class="section-kicker"><span>03</span> Our team</div><h2>People who care about <span class="display-italic">care.</span></h2></div>
+            <p>We’re builders, clinicians, and researchers united by a shared mission to improve care delivery.</p>
+          </div>
+          <div class="page-card-grid">
+            <article class="page-card" data-reveal="up">
+              <div class="page-card-icon"><i class="bi bi-heart-pulse" aria-hidden="true"></i></div>
+              <h3>Built with clinicians</h3>
+              <p>Practicing clinicians shape product decisions from the first sketch, so we design with reality in mind.</p>
+              <a class="page-card-link" href="approach.html">Our approach <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+            </article>
+            <article class="page-card page-card-dark" data-reveal="up" data-delay="0.1">
+              <div class="page-card-icon"><i class="bi bi-code-slash" aria-hidden="true"></i></div>
+              <h3>Technical rigor</h3>
+              <p>Security, reliability, and interoperability are foundational to every system we ship.</p>
+              <a class="page-card-link" href="platform.html">See the platform <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+              <div class="page-card-number">02</div>
+            </article>
+            <article class="page-card page-card-lime" data-reveal="up" data-delay="0.2">
+              <div class="page-card-icon"><i class="bi bi-people" aria-hidden="true"></i></div>
+              <h3>Human-centered by default</h3>
+              <p>We work alongside frontline teams to create tools that feel intuitive from the very first day.</p>
+              <a class="page-card-link" href="solutions.html">Who it helps <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+              <div class="page-card-visual"><i class="bi bi-plus-lg" aria-hidden="true"></i></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section page-section-alt" id="cta">
+        <div class="container">
+          <div class="page-cta" data-reveal="scale">
+            <div class="section-kicker light-kicker"><span>04</span> Join the conversation</div>
+            <h2>Ready to make care feel <span class="display-italic">more human?</span></h2>
+            <p>Let’s explore what Clarity can do for your team.</p>
+            <a class="button button-lime" href="book-a-demo.html">Start a conversation <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
           </div>
         </div>
       </section>

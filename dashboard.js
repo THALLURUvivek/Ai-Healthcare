@@ -336,8 +336,8 @@ const activeDashboard = readStoredValue('clarityDashboard');
 const activeUserEmail = readStoredValue('clarityUserEmail');
 
 const activeDashboardLabels = {
-  overview: 'Overview dashboard',
-  triage: 'Triage board'
+  admin: 'Admin',
+  doctor: 'Doctor'
 };
 
 const activeDashboardLabel = activeDashboardLabels[activeDashboard] || '';
@@ -355,7 +355,7 @@ if (activeUserEmail) {
 }
 
 if (welcomeFromSignIn === '1') {
-  showToast(activeDashboardLabel ? `Signed in to the ${activeDashboardLabel.toLowerCase()}. Your workspace is ready.` : 'Welcome back. Your Clarity workspace is ready.');
+    showToast(activeDashboardLabel ? `Signed in. Opening your ${activeDashboardLabel.toLowerCase()} workspace.` : 'Welcome back. Your Clarity workspace is ready.');
 }
 
 const triageAcuityOrder = ['routine', 'elevated', 'urgent', 'critical'];
